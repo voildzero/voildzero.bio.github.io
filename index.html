@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography of VoildZero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        h1 {
+            color: inherit;
+        }
+        p {
+            color: inherit;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .player {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        .dark {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+        .dark .container {
+            background: #444;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        }
+        .toggle-switch {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="toggle-switch">
+    <label>
+        <input type="checkbox" id="theme-toggle">
+        Switch to Dark Theme
+    </label>
+</div>
+
+<div class="container">
+    <h1>Hi, I'm VoildZero</h1>
+    <p>You can call me: Voild, Void, Voila, and etc.</p>
+    
+    <h2>Programming Languages I Know:</h2>
+    <ul>
+        <li>Bash</li>
+        <li>Ruby</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Programming Languages I'm Learning:</h2>
+    <ul>
+        <li>Java</li>
+        <li>C#</li>
+        <li>Golang</li>
+    </ul>
+
+    <h2>My Hobbies:</h2>
+    <ul>
+        <li>IT</li>
+        <li>Linux</li>
+        <li>OSINT</li>
+        <li>Music</li>
+        <li>Furry fandom (for 4 years)</li>
+        <li>Samsung fanboy</li>
+    </ul>
+
+    <h2>How to Reach Me:</h2>
+    <p>You can contact me on Telegram: <a href="https://t.me/suicide_voildzero" target="_blank">@suicide_voildzero</a></p>
+
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('change', () => {
+        body.classList.toggle('dark', themeToggle.checked);
+        themeToggle.nextElementSibling.textContent = themeToggle.checked ? 'Switch to Light Theme ☀️' : 'Switch to Dark Theme 🌙';
+    });
+
+</script>
+
+</body>
+</html>
